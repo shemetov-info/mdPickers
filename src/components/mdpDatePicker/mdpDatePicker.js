@@ -122,6 +122,7 @@ module.provider("$mdpDatePicker", function() {
                 controller:  ['$scope', '$mdDialog', '$mdMedia', '$timeout', 'currentDate', 'options', DatePickerCtrl],
                 controllerAs: 'datepicker',
                 clickOutsideToClose: true,
+                multiple: true,
                 template: '<md-dialog aria-label="" class="mdp-datepicker" ng-class="{ \'portrait\': !$mdMedia(\'gt-xs\') }">' +
                             '<md-dialog-content layout="row" layout-wrap>' +
                                 '<div layout="column" layout-align="start center">' +
